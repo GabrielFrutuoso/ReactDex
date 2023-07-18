@@ -1,0 +1,156 @@
+#normal{
+  background-color: #d4d4d4;
+}
+
+#fire{
+  background-color: #fca5a5;
+}
+
+#water{
+  background-color: #93c5fd;
+}
+
+#grass{
+  background-color: #6ee7b7;
+}
+
+#flying{
+  background-color: #7dd3fc;
+}
+
+#fighting{
+  background-color: #7dd3fc;
+}
+
+#poison{
+  background-color: #a78bfa;
+}
+
+#electric{
+  background-color: #fde68a;
+}
+
+#ground{
+  color: #ffffff;
+  background-color: #d0ae27;
+}
+
+#rock{
+  color: #ffffff;
+  background-color: #bd8c21;
+}
+
+#psychic{
+  background-color: #f0abfc;
+}
+
+#ice{
+  background-color: #bfdbfe;
+}
+
+#bug{
+  background-color: #bef264;
+}
+
+#ghost{
+  color: #ffffff;
+  background-color: #6d28d9;
+}
+
+#steel{
+  background-color: #cbd5e1;
+}
+
+#dragon{
+  background-color: #a5b4fc;
+}
+
+#dark{
+  color: #ffffff;
+  background-color: #4b5563;
+}
+
+#fairy{
+  background-color: #f9a8d4;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #FF0000 #FFFFFF;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #FFFFFF;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #FFFFFF;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #FF0000;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #FF4F4F;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #FF4F4F;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 15s linear infinite;
+  -moz-animation: rotating 15s linear infinite;
+  -ms-animation: rotating 15s linear infinite;
+  -o-animation: rotating 15s linear infinite;
+  animation: rotating 15s linear infinite;
+}
+
+.poke{
+  position: absolute;
+  transform: scale(2);
+  top: 44%;
+  left: 44%;
+  filter: contrast(200%);
+}
