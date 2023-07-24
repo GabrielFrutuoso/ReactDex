@@ -62,8 +62,8 @@ const Home = ({setData}) => {
     <NavBar filterPokemon={filterPokemon}/>
     <div className="w-full h-auto flex flex-wrap justify-center items-center mt-20" >
       {pokemons.map((pokemon, key)=>(
-        <div onClick={()=> goProfile(pokemon.data)} className='m-0'>
-        <PokeCard  key={key} name={pokemon.data.name} image={pokemon.data.sprites.front_default} id={pokemon.data.id} types={pokemon.data.types}/>
+        <div onClick={()=> goProfile(pokemon.data)} className='m-0' key={key}>
+        <PokeCard name={pokemon.data.name} image={pokemon.data.sprites.front_default} id={pokemon.data.id} types={pokemon.data.types}/>
         </div>
       ))}
     </div>

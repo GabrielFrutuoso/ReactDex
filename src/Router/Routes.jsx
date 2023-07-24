@@ -13,7 +13,7 @@ const Rotas = () => {
 
     <BrowserRouter>
         <Routes>
-        <Route path='/' element={<Start/>}/>
+        <Route path="/" element={<Start/>} />
             <Route path="/Home" element={<Home setData={setData} />}/>
             <Route path="/Profile" element={<Profile data={data} />}/>
         </Routes>
